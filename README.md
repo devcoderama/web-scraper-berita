@@ -2,12 +2,8 @@
 ```
 web-scraper-berita/
 │
-├── frontend/             # React.js Frontend
-│   ├── public/
-│   │   ├── index.html
-│   │   └── favicon.ico
-│   │
-│   ├── src/
+├── src/                 # Direktori utama untuk kode
+│   ├── client/          # Frontend React
 │   │   ├── components/
 │   │   │   ├── ScraperForm.tsx
 │   │   │   ├── ScraperResults.tsx
@@ -28,11 +24,7 @@ web-scraper-berita/
 │   │   ├── App.tsx
 │   │   └── index.tsx
 │   │
-│   ├── package.json
-│   └── tsconfig.json
-│
-├── backend/              # Node.js Backend
-│   ├── src/
+│   ├── server/          # Backend Node.js
 │   │   ├── controllers/
 │   │   │   └── scraperController.ts
 │   │   │
@@ -54,8 +46,10 @@ web-scraper-berita/
 │   │   ├── app.ts
 │   │   └── server.ts
 │   │
-│   ├── package.json
-│   └── tsconfig.json
+├── public/              # Aset publik
+│   ├── index.html
+│   └── favicon.ico
 │
-└── README.md
+├── package.json         # Manajemen dependensi dan skrip
+└── tsconfig.json        # Konfigurasi TypeScript
 ```

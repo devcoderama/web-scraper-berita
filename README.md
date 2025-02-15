@@ -2,32 +2,60 @@
 ```
 web-scraper-berita/
 │
-├── public/
-│   ├── index.html
-│   └── favicon.ico
+├── frontend/             # React.js Frontend
+│   ├── public/
+│   │   ├── index.html
+│   │   └── favicon.ico
+│   │
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── ScraperForm.tsx
+│   │   │   ├── ScraperResults.tsx
+│   │   │   └── LoadingSpinner.tsx
+│   │   │
+│   │   ├── interfaces/
+│   │   │   └── Scraper.ts
+│   │   │
+│   │   ├── services/
+│   │   │   └── scraperService.ts
+│   │   │
+│   │   ├── pages/
+│   │   │   └── Dashboard.tsx
+│   │   │
+│   │   ├── styles/
+│   │   │   └── index.css
+│   │   │
+│   │   ├── App.tsx
+│   │   └── index.tsx
+│   │
+│   ├── package.json
+│   └── tsconfig.json
 │
-├── src/
-│   ├── components/
-│   │   ├── ScraperForm.tsx
-│   │   ├── ScraperResults.tsx
-│   │   └── LoadingSpinner.tsx
+├── backend/              # Node.js Backend
+│   ├── src/
+│   │   ├── controllers/
+│   │   │   └── scraperController.ts
+│   │   │
+│   │   ├── services/
+│   │   │   └── scraperService.ts
+│   │   │
+│   │   ├── models/
+│   │   │   └── ScrapedItem.ts
+│   │   │
+│   │   ├── routes/
+│   │   │   └── scraperRoutes.ts
+│   │   │
+│   │   ├── utils/
+│   │   │   └── scraperUtils.ts
+│   │   │
+│   │   ├── config/
+│   │   │   └── database.ts
+│   │   │
+│   │   ├── app.ts
+│   │   └── server.ts
 │   │
-│   ├── interfaces/
-│   │   └── Scraper.ts
-│   │
-│   ├── services/
-│   │   └── scraperService.ts
-│   │
-│   ├── pages/
-│   │   └── Dashboard.tsx
-│   │
-│   ├── styles/
-│   │   └── index.css
-│   │
-│   ├── App.tsx
-│   └── index.tsx
+│   ├── package.json
+│   └── tsconfig.json
 │
-├── package.json
-├── tsconfig.json
 └── README.md
 ```
